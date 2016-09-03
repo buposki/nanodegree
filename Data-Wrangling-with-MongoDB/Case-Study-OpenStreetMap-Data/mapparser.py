@@ -1,8 +1,21 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # mapparser.py
 # Data Wrangling with MongoDB (Udacity.com)
 # Project 3: OpenStreetMap Data Case Study
 #
 # Amodiovalerio Verde (amodiovalerio.verde at gmail.com)
+
+"""
+Your task is to use the iterative parsing to process the map file and
+find out not only what tags are there, but also how many, to get the
+feeling on how much of which data you can expect to have in the map.
+Fill out the count_tags function. It should return a dictionary with the 
+tag name as the key and number of times this tag can be encountered in 
+the map as value.
+Note that your code will be tested with a different data file than the 'example.osm'
+"""
 
 import xml.etree.cElementTree as ET
 import pprint
@@ -17,7 +30,7 @@ def count_tags(filename):
         tag_count[element.tag] += 1
         # Clear element from memory. It (really) speeds up execution and avoid computer locking due low memory
         element.clear()
-    return tag_count
+    return dict(tag_count)
 
 def test():
     tags = count_tags('example.osm')
