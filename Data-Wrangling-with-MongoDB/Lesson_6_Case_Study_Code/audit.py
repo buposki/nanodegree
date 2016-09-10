@@ -1,3 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# audit.py
+# Data Wrangling with MongoDB (Udacity.com)
+# Project 3: OpenStreetMap Data Case Study
+#
+# Amodiovalerio Verde (amodiovalerio.verde at gmail.com)
+
 """
 Your task in this exercise has two steps:
 

@@ -5,8 +5,7 @@
 # Data Wrangling with MongoDB (Udacity.com)
 # Project 3: OpenStreetMap Data Case Study
 #
-# Amodiovalerio Verde
-# amodiovalerio.verde@gmail.com
+# Amodiovalerio Verde (amodiovalerio.verde at gmail.com)
 
 import xml.etree.cElementTree as ET
 import pprint
